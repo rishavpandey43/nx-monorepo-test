@@ -1,9 +1,20 @@
-import NxWelcome from './nx-welcome';
+import { UiLib } from '@my-org/ui-lib';
+
+import { consoleLog } from 'helper';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="main-app" />
+      <div>
+        <button
+          onClick={() => {
+            consoleLog('Hello from the helper function!');
+          }}
+        >
+          Click Me!
+        </button>
+      </div>
+      <UiLib />
     </div>
   );
 }
